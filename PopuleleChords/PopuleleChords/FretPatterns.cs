@@ -1,6 +1,4 @@
 ﻿using System.Collections.Generic;
-using Xamarin.Forms;
-using SkiaSharp;
 using SkiaSharp.Views.Forms;
 
 namespace PopuleleChords
@@ -10,7 +8,7 @@ namespace PopuleleChords
         public string Name { get; set; } = string.Empty;
         public string Notes { get; set; } = string.Empty;
         public int[,] Fretboard { get; set; } = new int[4,15];
-        public SKCanvasView FretCanvas { get; set; }
+        public SKCanvasView FretImage { get; set; }
     }
 
     public static class Patterns

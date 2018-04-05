@@ -2,9 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
-             xmlns:local="clr-namespace:PopuleleChords"
              x:Class="PopuleleChords.MainPage"
              BindingContext="local:Patterns">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0,10,0,0" />
+            <On Platform="Android" Value="0,0,0,0" />
+        </OnPlatform>
+    </ContentPage.Padding>
 
     <ListView x:Name="ChordList" HasUnevenRows="True" ItemsSource="ChordList" Margin="10" >
         <ListView.ItemTemplate>
@@ -19,7 +25,14 @@
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
-                        <skia:SKCanvasView PaintSurface="OnCanvasViewPaintSurface" Grid.Column="0" Margin="3,0,0,3" />
+                        <skia:SKCanvasView PaintSurface="OnCanvasViewPaintSurface" Grid.Column="0" >
+                            <skia:SKCanvasView.Margin>
+                                <OnPlatform x:TypeArguments="Thickness">
+                                    <On Platform="iOS" Value="18,3,3,3" />
+                                    <On Platform="Android" Value="3,3,3,3" />
+                                </OnPlatform>
+                            </skia:SKCanvasView.Margin>
+                        </skia:SKCanvasView>
                         <Label Text="{Binding Name}" Grid.Column="1" FontAttributes="Bold" FontSize="Large"  VerticalTextAlignment="Center" />
                         <Label Text="{Binding Notes}" Grid.Column="2" FontAttributes="Italic" FontSize="Micro" VerticalTextAlignment="Center" Margin="10, 0, 0, 0" />
                     </Grid>

@@ -8,13 +8,13 @@ namespace PopuleleChords
 {
     public partial class MainPage : ContentPage
 	{
-	    public MainPage()
+        public MainPage()
 		{
 			InitializeComponent();
             this.FindByName<ListView>("ChordList").ItemsSource = Patterns.ChordList;
             this.FindByName<ListView>("ChordList").ItemSelected += (sender, e) => 
             {
-                Pattern chord = (Pattern)this.FindByName<ListView>("ChordList").SelectedItem;
+                // Pattern chord = (Pattern)this.FindByName<ListView>("ChordList").SelectedItem;
             };
         }
 
@@ -33,53 +33,62 @@ namespace PopuleleChords
                 StrokeWidth = 1
             };
 
+            canvas.Clear();
+            int scale = info.Width / 5;
+            int string_width = scale;
+            int fret_height = scale;
+            int radius = scale / 3;
+            const int pad = 15;
+
             SKPaint lines = new SKPaint
             {
                 Style = SKPaintStyle.Stroke,
-                StrokeWidth = 5
+                StrokeWidth = 5,
+                Color = Color.LightGray.ToSKColor()
             };
 
-            canvas.Clear();
-            int[,] fretboard = pattern.Fretboard;
-            int string_width = 25;
-            int fret_height = 25;
-            int radius = string_width > fret_height ? fret_height : string_width;
-            radius /= 3;
-
-            lines.Color = Color.LightGray.ToSKColor();
-            for (int j = 0; j < fretboard.GetLength(1) + 1 || j < 4; j++)
+            // Draw the frets
+            for (int j = 0; j < pattern.Fretboard.GetLength(1) + 1 || j < 4; j++)
             {
                 canvas.DrawLine(
-                    string_width / 2,
-                    (j + 1) * fret_height + 15,
-                    string_width * 3.5f,
-                    (j + 1) * fret_height + 15,
-                    lines);
+                    string_width * 0.5f,            // x0
+                    (j + 1) * fret_height + pad,    // y0
+                    string_width * 3.5f,            // x1
+                    (j + 1) * fret_height + pad,    // y1
+                    lines);                         // paint style
             }
 
+            // Draw the strings
             lines.Color = Color.Black.ToSKColor();
-            for (int i = 0; i < fretboard.GetLength(0); i++)
+            for (int i = 0; i < pattern.Fretboard.GetLength(0); i++)
                 canvas.DrawLine(
-                    (i + 1) * string_width - (string_width / 2),
-                    0, 
-                    (i + 1) * string_width - (string_width / 2), 
-                    info.Height, 
-                    lines);
+                    (i + 1) * string_width - (string_width * 0.5f), // x0
+                    0,                                              // y0
+                    (i + 1) * string_width - (string_width * 0.5f), // x1
+                    info.Height,                                    // y1
+                    lines);                                         // paint style
 
-            for (int i = 0; i < fretboard.GetLength(0); i++)
+            // Draw the notes
+            for (int i = 0; i < pattern.Fretboard.GetLength(0); i++)
             {
-                for (int j = 0; j < fretboard.GetLength(1); j++)
+                for (int j = 0; j < pattern.Fretboard.GetLength(1); j++)
                 {
-                    if (fretboard[i, j] <= 0) continue;
-
-                    int circle_x = (i + 1) * string_width - (string_width / 2);
-                    int circle_y = (j + 1) * fret_height - (fret_height / 2) + 15;
+                    if (pattern.Fretboard[i, j] <= 0) continue;
+                    int circle_x = (i + 1) * string_width - (int)(string_width * 0.5f);
+                    int circle_y = (j + 1) * fret_height - (int)(fret_height * 0.5f) + pad;
                     canvas.DrawCircle(circle_x, circle_y, radius, frets);
                 }
             }
+
+            // Draw the nut
             lines.Color = Color.Black.ToSKColor();
             lines.StrokeWidth = 30;
-            canvas.DrawLine(string_width / 2, 0, string_width * 3.5f, 0, lines);
+            canvas.DrawLine(
+                string_width * 0.5f,    // x0
+                0,                      // y0
+                string_width * 3.5f,    // x1
+                0,                      // y1
+                lines);                 // paint style
         }
     }
 }
