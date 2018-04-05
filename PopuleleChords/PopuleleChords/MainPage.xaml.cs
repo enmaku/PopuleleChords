@@ -34,28 +34,30 @@ namespace PopuleleChords
             };
 
             canvas.Clear();
-            int scale = info.Width / 5;
+            int num_frets = pattern.Fretboard.GetLength(1) - pattern.FirstFret + 1;
+            num_frets = num_frets > 5 ? num_frets : 5;
+            int scale = info.Width / num_frets;
             int string_width = scale;
             int fret_height = scale;
-            int radius = scale / 3;
+            int radius = (int)(scale * 0.4f);
             const int pad = 15;
 
             SKPaint lines = new SKPaint
             {
-                Style = SKPaintStyle.Stroke,
+                Style = SKPaintStyle.StrokeAndFill,
                 StrokeWidth = 5,
                 Color = Color.LightGray.ToSKColor()
             };
 
             // Draw the frets
-            for (int j = 0; j < pattern.Fretboard.GetLength(1) + 1 || j < 4; j++)
+            for (int j = pattern.FirstFret; j < pattern.Fretboard.GetLength(1) + 1 || j < 4; j++)
             {
                 canvas.DrawLine(
-                    string_width * 0.5f,            // x0
-                    (j + 1) * fret_height + pad,    // y0
-                    string_width * 3.5f,            // x1
-                    (j + 1) * fret_height + pad,    // y1
-                    lines);                         // paint style
+                    string_width * 0.5f,                                // x0
+                    (j - pattern.FirstFret + 1) * fret_height + pad,    // y0
+                    string_width * 3.5f,                                // x1
+                    (j - pattern.FirstFret + 1) * fret_height + pad,    // y1
+                    lines);                                             // paint style
             }
 
             // Draw the strings
@@ -71,24 +73,35 @@ namespace PopuleleChords
             // Draw the notes
             for (int i = 0; i < pattern.Fretboard.GetLength(0); i++)
             {
-                for (int j = 0; j < pattern.Fretboard.GetLength(1); j++)
+                for (int j = pattern.FirstFret; j < pattern.Fretboard.GetLength(1); j++)
                 {
                     if (pattern.Fretboard[i, j] <= 0) continue;
                     int circle_x = (i + 1) * string_width - (int)(string_width * 0.5f);
-                    int circle_y = (j + 1) * fret_height - (int)(fret_height * 0.5f) + pad;
+                    int circle_y = (j - pattern.FirstFret + 1) * fret_height - (int)(fret_height * 0.5f) + pad;
                     canvas.DrawCircle(circle_x, circle_y, radius, frets);
                 }
             }
 
             // Draw the nut
             lines.Color = Color.Black.ToSKColor();
-            lines.StrokeWidth = 30;
+            lines.StrokeWidth = pad * 2;
             canvas.DrawLine(
                 string_width * 0.5f,    // x0
                 0,                      // y0
                 string_width * 3.5f,    // x1
                 0,                      // y1
                 lines);                 // paint style
+
+            // Draw the first fret number, if any
+            if (pattern.FirstFret > 0)
+            {
+                lines.StrokeWidth = 1;
+                lines.Color = Color.Black.ToSKColor();
+                lines.TextSize = fret_height;
+                int text_x = 4 * string_width;
+                int text_y = fret_height - (int)(fret_height * 0.5f) + (int)(pad * 1.5f);
+                canvas.DrawText($"{pattern.FirstFret + 1}", text_x, text_y, lines);
+            }
         }
     }
 }
