@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Xamarin.Forms;
 
 namespace PopuleleChords.Droid
 {
@@ -12,7 +13,7 @@ namespace PopuleleChords.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
             base.OnCreate(bundle);
-            Xamarin.Forms.Forms.Init(this, bundle);
+            Forms.Init(this, bundle);
             LoadApplication(new App());
         }
     }

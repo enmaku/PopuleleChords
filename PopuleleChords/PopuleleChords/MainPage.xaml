@@ -16,16 +16,8 @@
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
-                        <skia:SKCanvasView PaintSurface="OnCanvasViewPaintSurface" Grid.Column="0" >
+                    <StackLayout Orientation="Horizontal">
+                        <skia:SKCanvasView PaintSurface="OnCanvasViewPaintSurface">
                             <skia:SKCanvasView.Margin>
                                 <OnPlatform x:TypeArguments="Thickness">
                                     <On Platform="iOS" Value="18,3,3,3" />
@@ -33,9 +25,9 @@
                                 </OnPlatform>
                             </skia:SKCanvasView.Margin>
                         </skia:SKCanvasView>
-                        <Label Text="{Binding Name}" Grid.Column="1" FontAttributes="Bold" FontSize="Large"  VerticalTextAlignment="Center" />
-                        <Label Text="{Binding Notes}" Grid.Column="2" FontAttributes="Italic" FontSize="Micro" VerticalTextAlignment="Center" Margin="10, 0, 0, 0" />
-                    </Grid>
+                        <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="Large"  VerticalTextAlignment="Center" />
+                        <Label Text="{Binding Notes}" FontAttributes="Italic" FontSize="Micro" VerticalTextAlignment="Center" Margin="10, 0, 0, 0" />
+                    </StackLayout>
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>

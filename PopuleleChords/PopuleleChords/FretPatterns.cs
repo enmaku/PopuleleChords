@@ -51,7 +51,7 @@ namespace PopuleleChords
                     { 0, 0 },
                     { 0, 0 }
                 }
-            },
+            }, // A
             new Pattern
             {
                 Root = 'A',
@@ -63,7 +63,7 @@ namespace PopuleleChords
                     { 0, 0 },
                     { 0, 0 }
                 }
-            },
+            }, // Am
             new Pattern
             {
                 Root = 'A',
@@ -75,7 +75,7 @@ namespace PopuleleChords
                     { 1, 0, 0, 0 },
                     { 0, 0, 0, 1 }
                 }
-            },
+            }, // A+
             new Pattern
             {
                 Root = 'A',
@@ -87,7 +87,7 @@ namespace PopuleleChords
                     { 0, 1, 0 },
                     { 0, 0, 1 }
                 }
-            },
+            }, // Ao
             new Pattern
             {
                 Root = 'A',
@@ -99,7 +99,7 @@ namespace PopuleleChords
                     { 0 },
                     { 0 }
                 }
-            },
+            }, // A7
             new Pattern
             {
                 Root = 'A',
@@ -111,7 +111,7 @@ namespace PopuleleChords
                     { 0 },
                     { 0 }
                 }
-            },
+            }, // Am7
             new Pattern
             {
                 Root = 'A',
@@ -123,7 +123,7 @@ namespace PopuleleChords
                     { 0 },
                     { 0 }
                 }
-            },
+            }, // AM7
             new Pattern
             {
                 Root = 'A',
@@ -135,7 +135,7 @@ namespace PopuleleChords
                     { 0, 1 },
                     { 0, 0 }
                 }
-            },
+            }, // A6
             new Pattern
             {
                 Root = 'A',
@@ -147,7 +147,7 @@ namespace PopuleleChords
                     { 0, 1 },
                     { 0, 0 }
                 }
-            },
+            }, // Am6
             new Pattern
             {
                 Root = 'A',
@@ -159,7 +159,7 @@ namespace PopuleleChords
                     { 0, 0 },
                     { 0, 1 }
                 }
-            },
+            }, // Aadd9
             new Pattern
             {
                 Root = 'A',
@@ -171,7 +171,7 @@ namespace PopuleleChords
                     { 0, 0 },
                     { 0, 1 }
                 }
-            },
+            }, // Am9
             new Pattern
             {
                 Root = 'A',
@@ -183,7 +183,7 @@ namespace PopuleleChords
                     { 0, 0 },
                     { 0, 1 }
                 }
-            },
+            }, // A9
             new Pattern
             {
                 Root = 'A',
@@ -196,7 +196,7 @@ namespace PopuleleChords
                     { 0, 1, 0, 0, 0 }
                 },
                 FirstFret = 1
-            },
+            }, // Asus2
             new Pattern
             {
                 Root = 'A',
@@ -208,7 +208,7 @@ namespace PopuleleChords
                     { 0, 0 },
                     { 0, 0 }
                 }
-            },
+            }, // Asus4
             new Pattern
             {
                 Root = 'A',
@@ -220,7 +220,7 @@ namespace PopuleleChords
                     { 0, 0 },
                     { 0, 0 }
                 }
-            },
+            }, // A7sus4
             new Pattern
             {
                 Root = 'B',
@@ -232,7 +232,7 @@ namespace PopuleleChords
                     { 1, 0, 0 },
                     { 1, 0, 0 }
                 }
-            },
+            }, // Bb
             new Pattern
             {
                 Root = 'B',
@@ -244,7 +244,7 @@ namespace PopuleleChords
                     { 1, 0, 0 },
                     { 1, 0, 0 }
                 }
-            },
+            }, // Bbm
             new Pattern
             {
                 Root = 'B',
@@ -256,7 +256,7 @@ namespace PopuleleChords
                     { 0, 1, 0 },
                     { 1, 0, 0 }
                 }
-            },
+            }, // Bb+
             new Pattern
             {
                 Root = 'B',
@@ -268,7 +268,7 @@ namespace PopuleleChords
                     { 0, 0, 0 },
                     { 1, 0, 0 }
                 }
-            },
+            }, // Bbo
             new Pattern
             {
                 Root = 'B',
@@ -280,7 +280,7 @@ namespace PopuleleChords
                     { 1, 1, 0 },
                     { 1, 0, 0 }
                 }
-            },
+            }, // Bb7
             new Pattern
             {
                 Root = 'B',
@@ -292,7 +292,7 @@ namespace PopuleleChords
                     { 1, 0, 0 },
                     { 1, 0, 0 }
                 }
-            },
+            }, // Bbm7
             new Pattern
             {
                 Root = 'B',
@@ -304,7 +304,7 @@ namespace PopuleleChords
                     { 1, 0, 0 },
                     { 0, 0, 0 }
                 }
-            },
+            }, // BbM7
             new Pattern
             {
                 Root = 'B',
@@ -316,7 +316,7 @@ namespace PopuleleChords
                     { 0, 1 },
                     { 0, 0 }
                 }
-            },
+            }, // Bb6
             new Pattern
             {
                 Root = 'B',
@@ -328,7 +328,7 @@ namespace PopuleleChords
                     { 1, 0, 1 },
                     { 1, 0, 0 }
                 }
-            },
+            }, // Bbm6
             new Pattern
             {
                 Root = 'B',
@@ -340,7 +340,7 @@ namespace PopuleleChords
                     { 1, 0, 0 },
                     { 0, 0, 1 }
                 }
-            },
+            }, // Bbadd9
             new Pattern
             {
                 Root = 'B',
@@ -352,7 +352,7 @@ namespace PopuleleChords
                     { 1, 0, 0 },
                     { 0, 0, 1 }
                 }
-            },
+            }, // Bbm9
             new Pattern
             {
                 Root = 'B',
@@ -364,7 +364,7 @@ namespace PopuleleChords
                     { 0, 0, 0, 1 },
                     { 0, 0, 1, 0 }
                 }
-            },
+            }, // Bb9
             new Pattern
             {
                 Root = 'B',
@@ -376,7 +376,7 @@ namespace PopuleleChords
                     { 1, 0, 0 },
                     { 1, 0, 0 }
                 }
-            },
+            }, // Bbsus2
             new Pattern
             {
                 Root = 'B',
@@ -388,7 +388,7 @@ namespace PopuleleChords
                     { 1, 0, 0 },
                     { 1, 0, 0 }
                 }
-            },
+            }, // Bbsus4
             new Pattern
             {
                 Root = 'B',
@@ -400,7 +400,7 @@ namespace PopuleleChords
                     { 1, 0, 0 },
                     { 1, 0, 0 }
                 }
-            },
+            }, // Bb7sus4
             new Pattern
             {
                 Root = 'B',
@@ -412,7 +412,7 @@ namespace PopuleleChords
                     { 0, 1, 0, 0 },
                     { 0, 1, 0, 0 }
                 }
-            },
+            }, // B
             new Pattern
             {
                 Root = 'B',
@@ -424,7 +424,7 @@ namespace PopuleleChords
                     { 0, 1, 0, 0 },
                     { 0, 1, 0, 0 }
                 }
-            },
+            }, // Bm
             new Pattern
             {
                 Root = 'B',
@@ -436,7 +436,7 @@ namespace PopuleleChords
                     { 0, 0, 1, 0 },
                     { 0, 1, 0, 0 }
                 }
-            },
+            }, // B+
             new Pattern
             {
                 Root = 'B',
@@ -448,7 +448,7 @@ namespace PopuleleChords
                     { 1, 0, 0, 0 },
                     { 0, 1, 0, 0 }
                 }
-            },
+            }, // Bo
             new Pattern
             {
                 Root = 'B',
@@ -460,7 +460,7 @@ namespace PopuleleChords
                     { 0, 1, 0 },
                     { 0, 1, 0 }
                 }
-            },
+            }, // B7
             new Pattern
             {
                 Root = 'B',
@@ -472,19 +472,7 @@ namespace PopuleleChords
                     { 0, 1 },
                     { 0, 1 }
                 }
-            },
-            new Pattern
-            {
-                Root = 'B',
-                ChordType = new List<ChordFeatures> { ChordFeatures.Minor },
-                Fretboard = new[,]
-                {
-                    { 0, 1, 0, 1 },
-                    { 0, 1, 0, 0 },
-                    { 0, 1, 0, 0 },
-                    { 0, 1, 0, 0 }
-                }
-            },
+            }, // Bm7
             new Pattern
             {
                 Root = 'B',
@@ -496,7 +484,7 @@ namespace PopuleleChords
                     { 0, 1, 0, 0 },
                     { 1, 0, 0, 0 }
                 }
-            },
+            }, // BM7
             new Pattern
             {
                 Root = 'B',
@@ -508,7 +496,7 @@ namespace PopuleleChords
                     { 0, 1, 0 },
                     { 0, 1, 0 }
                 }
-            },
+            }, // B6
             new Pattern
             {
                 Root = 'B',
@@ -520,7 +508,7 @@ namespace PopuleleChords
                     { 0, 1 },
                     { 0, 1 }
                 }
-            },
+            }, // Bm6
             new Pattern
             {
                 Root = 'B',
@@ -532,7 +520,7 @@ namespace PopuleleChords
                     { 0, 1, 0, 0 },
                     { 0, 0, 0, 1 }
                 }
-            },
+            }, // Badd9
             new Pattern
             {
                 Root = 'B',
@@ -544,7 +532,7 @@ namespace PopuleleChords
                     { 0, 0 },
                     { 0, 1 }
                 }
-            },
+            }, // Bm9
             new Pattern
             {
                 Root = 'B',
@@ -557,7 +545,7 @@ namespace PopuleleChords
                     { 0, 0, 0, 1, 0 }
                 },
                 FirstFret = 2
-            },
+            }, // B9
             new Pattern
             {
                 Root = 'B',
@@ -569,7 +557,7 @@ namespace PopuleleChords
                     { 0, 1, 0, 0 },
                     { 0, 1, 0, 0 }
                 }
-            },
+            }, // Bsus2
             new Pattern
             {
                 Root = 'B',
@@ -581,7 +569,7 @@ namespace PopuleleChords
                     { 0, 1, 0, 0 },
                     { 0, 1, 0, 0 }
                 }
-            },
+            }, // Bsus4
             new Pattern
             {
                 Root = 'B',
@@ -593,7 +581,7 @@ namespace PopuleleChords
                     { 0, 1, 0, 0 },
                     { 0, 1, 0, 0 }
                 }
-            },
+            }, // B7sus4
             new Pattern
             {
                 Root = 'C',
