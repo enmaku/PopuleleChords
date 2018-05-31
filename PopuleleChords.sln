@@ -93,23 +93,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {06BBD103-6583-4B2F-B7E3-039EAE07E57D}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://codinginmysleep.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = PopuleleChords\\PopuleleChords.Android\\PopuleleChords.Android.csproj
-		SccProjectName1 = PopuleleChords/PopuleleChords.Android
-		SccLocalPath1 = PopuleleChords\\PopuleleChords.Android
-		SccProjectUniqueName2 = PopuleleChords\\PopuleleChords.iOS\\PopuleleChords.iOS.csproj
-		SccProjectName2 = PopuleleChords/PopuleleChords.iOS
-		SccLocalPath2 = PopuleleChords\\PopuleleChords.iOS
-		SccProjectUniqueName3 = PopuleleChords\\PopuleleChords\\PopuleleChords.shproj
-		SccProjectName3 = PopuleleChords/PopuleleChords
-		SccLocalPath3 = PopuleleChords\\PopuleleChords
-		SccProjectUniqueName4 = PopuleleChords\\PopuleleChords\\PopuleleChords.projitems
-		SccProjectTopLevelParentUniqueName4 = PopuleleChords\\PopuleleChords\\PopuleleChords.shproj
-		SccProjectName4 = PopuleleChords/PopuleleChords
-		SccLocalPath4 = PopuleleChords\\PopuleleChords
-	EndGlobalSection
 EndGlobal
