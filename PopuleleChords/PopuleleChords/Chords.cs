@@ -1097,12 +1097,12 @@ namespace PopuleleChords
                 ChordType = new List<ChordFeatures> { ChordFeatures.Flat, ChordFeatures.Major },
                 Fretboard = new[,]
                 {
-                    { 0, 0, 1 },
+                    { 0, 0, 0 },
                     { 0, 0, 1 },
                     { 0, 0, 1 },
                     { 1, 0, 0 }
                 }
-            },
+            }, // Eb
             new Pattern
             {
                 Root = 'E',
@@ -1114,19 +1114,177 @@ namespace PopuleleChords
                     { 0, 1, 0 },
                     { 1, 0, 0 }
                 }
-            },
+            }, // Ebm
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Flat, ChordFeatures.Augmented },
+                Fretboard = new[,]
+                {
+                    { 0, 0, 0 },
+                    { 0, 0, 1 },
+                    { 0, 0, 1 },
+                    { 0, 1, 0 }
+                }
+            }, // Eb+
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Flat, ChordFeatures.Diminished },
+                Fretboard = new[,]
+                {
+                    { 0, 1, 0 },
+                    { 0, 0, 1 },
+                    { 0, 1, 0 },
+                    { 0, 0, 0 }
+                }
+            }, // Ebo
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Flat, ChordFeatures.Seventh },
+                Fretboard = new[,]
+                {
+                    { 0, 0, 1, 0 },
+                    { 0, 0, 1, 0 },
+                    { 0, 0, 1, 0 },
+                    { 0, 0, 0, 1 }
+                }
+            }, // Eb7
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Flat, ChordFeatures.Minor, ChordFeatures.Seventh },
+                Fretboard = new[,]
+                {
+                    { 0, 0, 1, 0 },
+                    { 0, 0, 1, 0 },
+                    { 0, 1, 0, 0 },
+                    { 0, 0, 0, 1 }
+                }
+            }, // Ebm7
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Flat, ChordFeatures.Major, ChordFeatures.Seventh },
+                FirstFret = 2,
+                Fretboard = new[,]
+                {
+                    { 0, 0, 1, 0, 0 },
+                    { 0, 0, 1, 0, 0 },
+                    { 0, 0, 1, 0, 0 },
+                    { 0, 0, 0, 0, 1 }
+                }
+            }, // Ebmaj7
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Flat, ChordFeatures.Sixth },
+                Fretboard = new[,]
+                {
+                    { 0, 0, 1 },
+                    { 0, 0, 1 },
+                    { 0, 0, 1 },
+                    { 0, 0, 1 }
+                }
+            }, // Eb6
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Flat, ChordFeatures.Minor, ChordFeatures.Sixth },
+                Fretboard = new[,]
+                {
+                    { 0, 0, 1 },
+                    { 0, 0, 1 },
+                    { 0, 1, 0 },
+                    { 0, 0, 1 }
+                }
+            }, // Ebm6
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Flat, ChordFeatures.Add9 },
+                Fretboard = new[,]
+                {
+                    { 0, 0, 0 },
+                    { 0, 0, 1 },
+                    { 1, 0, 0 },
+                    { 1, 0, 0 }
+                }
+            }, // Ebadd9
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Flat, ChordFeatures.Minor, ChordFeatures.Ninth },
+                FirstFret = 2,
+                Fretboard = new[,]
+                {
+                    { 0, 0, 1, 0, 0, 0 },
+                    { 0, 0, 0, 0, 0, 0 },
+                    { 0, 0, 0, 0, 1, 0 },
+                    { 0, 0, 0, 0, 0, 1 }
+                }
+            }, // Ebm9
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Flat, ChordFeatures.Ninth },
+                Fretboard = new[,]
+                {
+                    { 0 },
+                    { 1 },
+                    { 1 },
+                    { 1 }
+                }
+            }, // Eb9
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Flat, ChordFeatures.Sus2 },
+                Fretboard = new[,]
+                {
+                    { 0, 0, 1, 0 },
+                    { 0, 0, 1, 0 },
+                    { 0, 0, 0, 1 },
+                    { 0, 0, 0, 1 }
+                }
+            }, // Ebsus2
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Flat, ChordFeatures.Sus4 },
+                Fretboard = new[,]
+                {
+                    { 1, 0, 0, 0 },
+                    { 0, 0, 1, 0 },
+                    { 0, 0, 0, 1 },
+                    { 1, 0, 0, 0 }
+                }
+            }, // Ebsus4
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Flat, ChordFeatures.Seventh, ChordFeatures.Sus4 },
+                Fretboard = new[,]
+                {
+                    { 0, 0, 1, 0 },
+                    { 0, 0, 1, 0 },
+                    { 0, 0, 0, 1 },
+                    { 0, 0, 0, 1 }
+                }
+            }, // Eb7sus4
             new Pattern
             {
                 Root = 'E',
                 ChordType = new List<ChordFeatures> { ChordFeatures.Major },
                 Fretboard = new[,]
                 {
+                    { 1, 0, 0, 0 },
                     { 0, 0, 0, 1 },
-                    { 0, 0, 0, 1 },
-                    { 0, 0, 0, 1 },
+                    { 0, 0, 0, 0 },
                     { 0, 1, 0, 0 }
                 }
-            },
+            }, // E
             new Pattern
             {
                 Root = 'E',
@@ -1138,19 +1296,164 @@ namespace PopuleleChords
                     { 0, 0, 1, 0 },
                     { 0, 1, 0, 0 }
                 }
-            },
+            }, // Em
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Augmented },
+                Fretboard = new[,]
+                {
+                    { 1, 0, 0 },
+                    { 0, 0, 0 },
+                    { 0, 0, 0 },
+                    { 0, 0, 1 }
+                }
+            }, // E+
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Diminished },
+                Fretboard = new[,]
+                {
+                    { 0 },
+                    { 1 },
+                    { 0 },
+                    { 1 }
+                }
+            }, // Eo
             new Pattern
             {
                 Root = 'E',
                 ChordType = new List<ChordFeatures> { ChordFeatures.Seventh },
                 Fretboard = new[,]
                 {
-                    { 1, 0, 0 },
-                    { 0, 1, 0 },
-                    { 0, 0, 0 },
-                    { 0, 1, 0 }
+                    { 1, 0 },
+                    { 0, 1 },
+                    { 0, 0 },
+                    { 0, 1 }
                 }
-            },
+            }, // E7
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Minor, ChordFeatures.Seventh },
+                Fretboard = new[,]
+                {
+                    { 0, 0, 1, 0 },
+                    { 0, 0, 1, 0 },
+                    { 0, 1, 0, 0 },
+                    { 0, 0, 0, 1 }
+                }
+            }, // Em7
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Major, ChordFeatures.Seventh },
+                FirstFret = 2,
+                Fretboard = new[,]
+                {
+                    { 0, 0, 1, 0, 0 },
+                    { 0, 0, 1, 0, 0 },
+                    { 0, 0, 1, 0, 0 },
+                    { 0, 0, 0, 0, 1 }
+                }
+            }, // Emaj7
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Sixth },
+                Fretboard = new[,]
+                {
+                    { 0, 0, 0, 1 },
+                    { 0, 0, 0, 1 },
+                    { 0, 0, 0, 1 },
+                    { 0, 0, 0, 1 }
+                }
+            }, // E6
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Minor, ChordFeatures.Sixth },
+                Fretboard = new[,]
+                {
+                    { 0, 0 },
+                    { 1, 0 },
+                    { 0, 0 },
+                    { 0, 1 }
+                }
+            }, // Em6
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Add9 },
+                Fretboard = new[,]
+                {
+                    { 1, 0, 0, 0 },
+                    { 0, 0, 0, 1 },
+                    { 0, 1, 0, 0 },
+                    { 0, 1, 0, 0 }
+                }
+            }, // Eadd9
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Minor, ChordFeatures.Ninth },
+                Fretboard = new[,]
+                {
+                    { 0, 0, 0, 0 },
+                    { 0, 0, 0, 1 },
+                    { 0, 1, 0, 0 },
+                    { 0, 1, 0, 0 }
+                }
+            }, // Em9
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Ninth },
+                Fretboard = new[,]
+                {
+                    { 1, 0 },
+                    { 0, 1 },
+                    { 0, 1 },
+                    { 0, 1 }
+                }
+            }, // E9
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Sus2 },
+                Fretboard = new[,]
+                {
+                    { 0, 0, 0, 1 },
+                    { 0, 0, 0, 1 },
+                    { 0, 1, 0, 0 },
+                    { 0, 1, 0, 0 }
+                }
+            }, // Esus2
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Sus4 },
+                Fretboard = new[,]
+                {
+                    { 1, 0, 0, 0 },
+                    { 0, 0, 1, 0 },
+                    { 0, 0, 0, 1 },
+                    { 1, 0, 0, 0 }
+                }
+            }, // Esus4
+            new Pattern
+            {
+                Root = 'E',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Seventh, ChordFeatures.Sus4 },
+                Fretboard = new[,]
+                {
+                    { 0, 0, 1, 0 },
+                    { 0, 0, 1, 0 },
+                    { 0, 0, 0, 1 },
+                    { 0, 0, 0, 1 }
+                }
+            }, // E7sus4
             new Pattern
             {
                 Root = 'F',
@@ -1162,7 +1465,7 @@ namespace PopuleleChords
                     { 1, 0 },
                     { 0, 0 }
                 }
-            },
+            }, // F
             new Pattern
             {
                 Root = 'F',
@@ -1174,7 +1477,165 @@ namespace PopuleleChords
                     { 1, 0, 0 },
                     { 0, 0, 1 }
                 }
-            },
+            }, // Fm
+            new Pattern
+            {
+                Root = 'F',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Augmented },
+                Fretboard = new[,]
+                {
+                    { 0, 1 },
+                    { 1, 0 },
+                    { 1, 0 },
+                    { 0, 0 }
+                }
+            }, // F+
+            new Pattern
+            {
+                Root = 'F',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Diminished },
+                Fretboard = new[,]
+                {
+                    { 1, 0 },
+                    { 0, 1 },
+                    { 1, 0 },
+                    { 0, 1 }
+                }
+            }, // Fo
+            new Pattern
+            {
+                Root = 'F',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Seventh },
+                Fretboard = new[,]
+                {
+                    { 0, 1, 0 },
+                    { 0, 0, 1 },
+                    { 1, 0, 0 },
+                    { 0, 0, 1 }
+                }
+            }, // F7
+            new Pattern
+            {
+                Root = 'F',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Minor, ChordFeatures.Seventh },
+                Fretboard = new[,]
+                {
+                    { 1, 0, 0 },
+                    { 0, 0, 1 },
+                    { 1, 0, 0 },
+                    { 0, 0, 1 }
+                }
+            }, // Fm7
+            new Pattern
+            {
+                Root = 'F',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Major, ChordFeatures.Seventh },
+                Fretboard = new[,]
+                {
+                    { 0, 1, 0, 0 },
+                    { 0, 0, 0, 1 },
+                    { 1, 0, 0, 0 },
+                    { 0, 0, 1, 0 }
+                }
+            }, // Fmaj7
+            new Pattern
+            {
+                Root = 'F',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Sixth },
+                Fretboard = new[,]
+                {
+                    { 0, 1, 0 },
+                    { 0, 1, 0 },
+                    { 1, 0, 0 },
+                    { 0, 0, 1 }
+                }
+            }, // F6
+            new Pattern
+            {
+                Root = 'F',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Minor, ChordFeatures.Sixth },
+                Fretboard = new[,]
+                {
+                    { 1, 0, 0 },
+                    { 0, 1, 0 },
+                    { 1, 0, 0 },
+                    { 0, 0, 1 }
+                }
+            }, // Fm6
+            new Pattern
+            {
+                Root = 'F',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Add9 },
+                Fretboard = new[,]
+                {
+                    { 0 },
+                    { 0 },
+                    { 1 },
+                    { 0 }
+                }
+            }, // Fadd9
+            new Pattern
+            {
+                Root = 'F',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Minor, ChordFeatures.Ninth },
+                FirstFret = 2,
+                Fretboard = new[,]
+                {
+                    { 0, 0, 0, 0, 0 },
+                    { 0, 0, 0, 0, 1 },
+                    { 0, 0, 0, 1, 0 },
+                    { 0, 0, 1, 0, 0 }
+                }
+            }, // Fm9
+            new Pattern
+            {
+                Root = 'F',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Ninth },
+                Fretboard = new[,]
+                {
+                    { 0, 1, 0 },
+                    { 0, 0, 1 },
+                    { 0, 0, 1 },
+                    { 0, 0, 1 }
+                }
+            }, // F9
+            new Pattern
+            {
+                Root = 'F',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Sus2 },
+                Fretboard = new[,]
+                {
+                    { 0, 0, 0 },
+                    { 0, 0, 0 },
+                    { 1, 0, 0 },
+                    { 0, 0, 1 }
+                }
+            }, // Fsus2
+            new Pattern
+            {
+                Root = 'F',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Sus4 },
+                Fretboard = new[,]
+                {
+                    { 0, 0, 1 },
+                    { 0, 0, 0 },
+                    { 1, 0, 0 },
+                    { 1, 0, 0 }
+                }
+            }, // Fsus4
+            new Pattern
+            {
+                Root = 'F',
+                ChordType = new List<ChordFeatures> { ChordFeatures.Seventh, ChordFeatures.Sus4 },
+                FirstFret = 4,
+                Fretboard = new[,]
+                {
+                    { 0, 0, 0, 0, 1, 0 },
+                    { 0, 0, 0, 0, 1, 0 },
+                    { 0, 0, 0, 0, 0, 1 },
+                    { 0, 0, 0, 0, 0, 1 }
+                }
+            }, // F7sus4
             new Pattern
             {
                 Root = 'G',
