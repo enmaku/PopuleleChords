@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using SkiaSharp.Views.Forms;
 
 namespace PopuleleChords
 {
@@ -12,8 +11,8 @@ namespace PopuleleChords
                 string name = Root.ToString();
                 if (ChordType.Contains(ChordFeatures.Flat)) name += "b";
                 if (ChordType.Contains(ChordFeatures.Minor)) name += "m";
-                if (ChordType.Contains(ChordFeatures.Major) && !ChordType.Contains(ChordFeatures.Flat) && ChordType.Count > 1) name += "M";
-                if (ChordType.Contains(ChordFeatures.Major) && ChordType.Contains(ChordFeatures.Flat) && ChordType.Count > 2) name += "M";
+                if (ChordType.Contains(ChordFeatures.Major) && !ChordType.Contains(ChordFeatures.Flat) && ChordType.Count > 1) name += "maj";
+                if (ChordType.Contains(ChordFeatures.Major) && ChordType.Contains(ChordFeatures.Flat) && ChordType.Count > 2) name += "maj";
                 if (ChordType.Contains(ChordFeatures.Augmented)) name += "+";
                 if (ChordType.Contains(ChordFeatures.Diminished)) name += "°";
                 if (ChordType.Contains(ChordFeatures.Sixth)) name += "⁶";
@@ -25,10 +24,7 @@ namespace PopuleleChords
                 return name;
             }
         }
-
-        public string Notes { get; set; } = string.Empty;
         public int[,] Fretboard { get; set; } = new int[4,15];
-        public SKCanvasView FretImage { get; set; }
         public int FirstFret { get; set; }
         public char Root { get; set; }
         public List<ChordFeatures> ChordType { get; set; } = new List<ChordFeatures>();
